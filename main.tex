@@ -1,29 +1,32 @@
 \documentclass[notitlepage,oneside]{book}
 %Configuración
-\input{tex/00_configuracion}
+\input{00_configuracion/00_configuracion}
 \begin{document}
 %Páginas preliminares
 \pagenumbering{roman}
-\input{tex/01_portada}
-\input{tex/02_hoja_de_datos}
-\input{tex/03_resumen}
-\input{tex/04_abstract}
-\input{tex/05_agradecimiento}
-\input{tex/06_dedicatoria}
-\input{tex/07_indices}
-%\pagenumbering{arabic}
-%\input{tex/Nomenclatura}
-%\input{tex/Introduccion}
-%\input{tex/Marco_Teorico}
-%\input{tex/Radio}
-%\input{tex/Modelo}
-%\input{tex/Disipador}
-%\input{tex/Conclusiones}
-%\input{tex/anexos}
-%\input{tex/Apendices}
-%:tex creado para realizar pruebas en tablas y figuras
-%\input{tex/Pruebas_de_formato.tex}
-%Sección de Bibliografía
+\input{01_preliminares/01_portada}
+\input{01_preliminares/02_hoja_de_datos}
+\input{01_preliminares/03_resumen}
+\input{01_preliminares/04_abstract}
+\input{01_preliminares/05_agradecimiento}
+\input{01_preliminares/06_dedicatoria}
+\input{01_preliminares/07_indices}
+\input{01_preliminares/08_nomenclatura}
+%Páginas principales
+\input{02_principales/01_introduccion}
+\pagenumbering{arabic}
+\input{02_principales/02_marco_teorico}
+\input{02_principales/03_cap3}
+\input{02_principales/04_cap4}
+\input{02_principales/05_cap5}
+\input{02_principales/06_conclusiones}
+%Anexos
+\input{03_anexos/00_configuracion}
+\input{03_anexos/01_adquisicion_de_datos}
+%Apéndices
+\input{04_apendices/00_configuracion}
+\input{04_apendices/01_modulo__de_potencia}
+%Bibliografía (pendiente cambiar por BibTex)
 
 \begin{thebibliography}{99}
 %Item de referencia
